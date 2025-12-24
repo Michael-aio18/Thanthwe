@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanthwe</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      background: #0f766e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* ================= HERO SECTION ================= */
+    .hero {
+      height: 80vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('logo.jpg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 12px 30px;
+      border: none;
+      background: #14b8a6;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #0d9488;
+      transform: translateY(-3px);
+    }
+
+    /* ================= SECTION ================= */
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #0f766e;
+    }
+
+    /* ================= IMAGE GRID ================= */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(15,118,110,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.4s;
+      padding: 20px;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #0f766e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Thanthwe Logo">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Ourwork.html">Our Work</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <div>
+      <h2>Together, We Can Make a Difference</h2>
+      <p>We are dedicated to supporting communities through care, education, and sustainable solutions.</p>
+      <button>Get Involved</button>
+    </div>
+  </div>
+
+  <!-- ================= WHAT WE DO ================= -->
+  <section>
+    <h3>What We Do</h3>
+
+    <div class="grid">
+      <div class="card">
+        <img src="kidsss.jpg" alt="Community Support">
+        <div class="overlay">
+          <div>
+            <h4>Community Support</h4>
+            <p>Providing food, care, and hope to those in need.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gala.jpg" alt="Education">
+        <div class="overlay">
+          <div>
+            <h4>Education</h4>
+            <p>Empowering the next generation through learning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="vision.webp" alt="Our Vision">
+        <div class="overlay">
+          <div>
+            <h4>Our Vision</h4>
+            <p>to re-build a nation of active citizenry in Malawi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 thanthwe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

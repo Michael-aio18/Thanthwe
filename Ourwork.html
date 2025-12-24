@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work | Thanthwe</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      background: #0f766e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* ================= PAGE INTRO ================= */
+    .page-intro {
+      padding: 60px 40px 30px;
+      text-align: center;
+    }
+
+    .page-intro h2 {
+      font-size: 36px;
+      color: #0f766e;
+      margin-bottom: 10px;
+    }
+
+    .page-intro p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* ================= TEAM SECTION ================= */
+    .team {
+      padding: 50px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .team h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #0f766e;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .team-card h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .team-card span {
+      font-size: 14px;
+      color: #0f766e;
+      font-weight: 500;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    /* ================= WORK SECTION ================= */
+    .work {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .work h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #0f766e;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .work-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .work-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .work-overlay h4 {
+      font-size: 20px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #0f766e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Thanthwe Logo">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Ourwork.html">Our Work</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= INTRO ================= -->
+  <div class="page-intro">
+    <h2>Our Work</h2>
+    <p>
+      We work closely with communities to create lasting change through action,
+      leadership, and compassion.
+    </p>
+  </div>
+
+  <!-- ================= MEET THE TEAM ================= -->
+  <section class="team">
+    <h3>Meet the Team</h3>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="vee.jpg" alt="Founder">
+        <h4>Violet Kumwenda</h4>
+        <span>Founder & Director</span>
+        <p>
+          Passionate about rebuilding communities and empowering citizens across Malawi.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <img src="Sellah.jpg" alt="Co-Founder">
+        <h4>Sellah Singini</h4>
+        <span>Co-Founder</span>
+        <p>
+          Dedicated to youth development, education, and sustainable impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK SHOWCASE ================= -->
+  <section class="work">
+    <h3>What We Do</h3>
+
+    <div class="work-grid">
+      <div class="work-card">
+        <img src="kidsss.jpg" alt="Community Outreach">
+        <div class="work-overlay">
+          <h4>Community Outreach</h4>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="gala.jpg" alt="Education Programs">
+        <div class="work-overlay">
+          <h4>Education Programs</h4>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <img src="vision.webp" alt="Future Vision">
+        <div class="work-overlay">
+          <h4>Building a Better Future</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Thanthwe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
